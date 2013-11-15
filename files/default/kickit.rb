@@ -14,6 +14,6 @@ loop do
     client.puts resp
     client.close                 # Disconnect from the client
     `sudo killall -USR1 chef-client`
-    puts("KickIt is running chef-client")
+    Syslog.open('KickIt', Syslog::LOG_PID, Syslog::LOG_LOCAL5) { |s| s.info 'Kicking chef-client' }
   end
 end
