@@ -3,6 +3,8 @@ kickit
 
 Configures the kickit ruby script that runs as a daemon and listens for an http connection on port 5425 (KICK).
 
+To kickit, visit `http://your.host.name:5425/` in a browser
+
 Files
 -----
 
